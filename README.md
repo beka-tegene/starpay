@@ -98,10 +98,10 @@ immediately without hitting the network.
 
 StarPay signs callback payloads with HMAC-SHA256 over `${timestamp}.${JSON.stringify(payload)}`,
 sent as `X-Signature` and `X-Timestamp` headers. This lives in
-`src/endpoints/verifyCallbackSignature.js` as standalone functions:
+`starpay` as standalone functions:
 
 ```js
-const { verifySignature } = require('./src/endpoints/verifyCallbackSignature');
+const { verifySignature } = require('starpay');
 
 app.post('/webhooks/starpay', express.json(), (req, res) => {
   const isValid = verifySignature({
