@@ -1,7 +1,7 @@
 {
   "name": "starpay",
   "version": "1.0.0",
-  "description": "StarPay payment gateway npm package",
+  "description": "StarPay payment gateway SDK",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js"
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beka-tegene/starpay.git"
+    "url": "git+https://github.com/beka-tegene/starpay.git"
   },
   "keywords": [
     "starpay",
@@ -24,7 +24,7 @@
     "api",
     "ethiopia"
   ],
-  "author": "Your Name",
+  "author": "YOUR NAME",
   "license": "MIT",
   "files": [
     "src"
